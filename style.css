@@ -1,0 +1,153 @@
+/* Body - Full Page Layout */
+body {
+  background-color: #f8ad9d;
+  font-family: 'Spectral', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Navbar - Fixed at the Top */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Bars on left, button on right */
+  background-color: #f4845f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 10px;
+  /* Move to the top */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bars (Icons on the Left) */
+.bars {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons inside the Bars */
+.bars button {
+  all: unset;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Active Button (First Button) */
+.home-button {
+  background: #F28C38;
+}
+
+/* Icon Styling */
+.bars button i {
+  font-size: 20px;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Active Button Icon */
+.home-button i {
+  color: white;
+}
+
+/* Hover Effect */
+.bars button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Sign-in Button (Push to the Right) */
+.sign-in-button {
+  margin-left: auto;
+}
+
+/* Log in Button */
+.button {
+  background-color: #e04b5b;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c43a4a;
+}
+
+
+
+
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  /* Pushes buttons to opposite sides */
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Common Button Styles */
+.choices button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  /* Ensures both buttons are big */
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* Google Play Button (Left) */
+.google-play-button {
+  background-color: #000;
+  /* Black Button */
+  color: white;
+  margin-right: auto;
+  /* Pushes it to the left */
+}
+
+/* Start Video Chat Button (Right) */
+.start-videochat-button {
+  background-color: #007bff;
+  /* Blue Button */
+  color: white;
+  margin-left: auto;
+  /* Pushes it to the right */
+}
+
+/* Add Space Between Icon & Text */
+.choices button i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Button Hover Effects */
+.choices button:hover {
+  opacity: 0.8;
+}
